@@ -50,3 +50,8 @@ li {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
+li.done span {
+  text-decoration: line-through;
+  color: #888;
+}

@@ -13,3 +13,7 @@ button.addEventListener('click', () => {
     input.value = ''; // wyczyść pole
   }
 });
+
+checkbox.addEventListener('change', () => {
+  li.classList.toggle('done', checkbox.checked);
+});
