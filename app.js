@@ -58,3 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
     themeBtn.textContent = 'Tryb jasny';
   }
 });
+
+checkbox.setAttribute('aria-label', 'Oznacz jako wykonane');
+deleteBtn.setAttribute('aria-label', 'Usuń zadanie');
