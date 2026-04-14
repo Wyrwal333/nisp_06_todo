@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head> 
-<meta charset="UTF-8"> 
-<title>TODO App</title>
-<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista zadań</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-<h1>Moja lista zadań</h1> 
-<ul id="task-list"></ul>
-<form>
+<body>
+
+  <div class="container">
+    <h1>Moje zadania</h1>
+
+    <!-- 🔥 WAŻNE: type="button" żeby nie było migania -->
+    <button id="theme-toggle" type="button">Tryb ciemny</button>
+
+    <br><br>
+
     <input type="text" id="task-input" placeholder="Dodaj zadanie">
-    <button id="add-btn">Dodaj</button>
+    <button id="add-btn" type="button">Dodaj</button>
+
     <ul id="task-list"></ul>
-</form>
-<script src="app.js"></script>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  color: #333;
 }
 
 .container {
@@ -68,4 +69,20 @@ li button {
 
 li button:hover {
   background-color: #c0392b;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark li {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+body.dark input {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
 }
