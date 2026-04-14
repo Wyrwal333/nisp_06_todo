@@ -7,13 +7,31 @@ button.addEventListener('click', () => {
 
   if (taskText !== '') {
     const li = document.createElement('li');
-    li.textContent = taskText;
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+
+    const span = document.createElement('span');
+    span.textContent = taskText;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Usuń';
+
+    // checkbox – oznaczanie jako wykonane
+    checkbox.addEventListener('change', () => {
+      li.classList.toggle('done', checkbox.checked);
+    });
+
+    // usuwanie elementu
+    deleteBtn.addEventListener('click', () => {
+      li.remove();
+    });
+
+    li.appendChild(checkbox);
+    li.appendChild(span);
+    li.appendChild(deleteBtn);
+
     list.appendChild(li);
-
-    input.value = ''; // wyczyść pole
+    input.value = '';
   }
-});
-
-checkbox.addEventListener('change', () => {
-  li.classList.toggle('done', checkbox.checked);
 });

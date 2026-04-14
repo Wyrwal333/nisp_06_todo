@@ -55,3 +55,17 @@ li.done span {
   text-decoration: line-through;
   color: #888;
 }
+
+li button {
+  margin-left: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
